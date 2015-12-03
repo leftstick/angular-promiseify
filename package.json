@@ -2,7 +2,7 @@
   "name": "angular-promiseify",
   "version": "1.0.0",
   "description": "Turn regular callback-based function into $q promise",
-  "main": "index.js",
+  "main": "angular-promiseify.js",
   "scripts": {
     "test": "./node_modules/karma/bin/karma start"
   },

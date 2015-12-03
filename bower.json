@@ -1,0 +1,30 @@
+{
+  "name": "angular-promiseify",
+  "description": "Turn regular callback-based function into $q promise",
+  "main": "angular-promiseify.js",
+  "authors": [
+    "Howard.Zuo"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "promiseify",
+    "$q"
+  ],
+  "files": [
+    "angular-promiseify.js",
+    "angular-promiseify.min.js"
+  ],
+  "homepage": "https://github.com/leftstick/angular-promiseify",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
