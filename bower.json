@@ -1,5 +1,6 @@
 {
   "name": "angular-promiseify",
+  "version": "1.0.0",
   "description": "Turn regular callback-based function into $q promise",
   "main": "angular-promiseify.js",
   "authors": [
