@@ -8,7 +8,7 @@ module.exports = function(config) {
             'chai'
         ],
         browsers: [
-            'Chrome'
+            'Firefox'
         ],
         files: [
             'node_modules/angular/angular.js',
@@ -21,7 +21,7 @@ module.exports = function(config) {
         plugins: [
             'karma-mocha',
             'karma-chai',
-            'karma-chrome-launcher'
+            'karma-firefox-launcher'
         ],
         singleRun: true
     });
