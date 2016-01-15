@@ -4,6 +4,7 @@ angular-promiseify
 [![NPM version][npm-image]][npm-url]
 ![][david-url]
 ![][travis-url]
+![][dt-url]
 
 Turn regular callback-based function into $q promise
 
@@ -45,7 +46,7 @@ mod.controller('TestCtrl', function($scope, promiseify){
     .then(function(data){
         console.log(data);//here "ok" will be printed
     });
-    
+
 });
 ```
 
@@ -62,3 +63,4 @@ mod.controller('TestCtrl', function($scope, promiseify){
 [npm-image]: https://badge.fury.io/js/angular-promiseify.png
 [david-url]: https://david-dm.org/leftstick/angular-promiseify.png
 [travis-url]:https://api.travis-ci.org/leftstick/angular-promiseify.svg?branch=master
+[dt-url]:https://img.shields.io/npm/dt/angular-promiseify.svg
