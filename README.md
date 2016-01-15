@@ -5,6 +5,7 @@ angular-promiseify
 ![][david-url]
 ![][travis-url]
 ![][dt-url]
+![][license-url]
 
 Turn regular callback-based function into $q promise
 
@@ -64,3 +65,4 @@ mod.controller('TestCtrl', function($scope, promiseify){
 [david-url]: https://david-dm.org/leftstick/angular-promiseify.png
 [travis-url]:https://api.travis-ci.org/leftstick/angular-promiseify.svg?branch=master
 [dt-url]:https://img.shields.io/npm/dt/angular-promiseify.svg
+[license-url]:https://img.shields.io/npm/l/angular-promiseify.svg
