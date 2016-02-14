@@ -1,27 +1,27 @@
 /**
  *
  *  @author Howard.Zuo
- *  @date   Dec 3, 2015
+ *  @date   Feb 14, 2016
  *
  **/
-(function(root, factory) {
+(function(root, factory){
     'use strict';
 
-    if (typeof define === 'function' && define.amd) {
+    if (typeof define === 'function' && define.amd){
         // AMD. Register as an anonymous module.
-        define(['angular'], function(angular) {
+        define(['angular'], function(angular){
             return factory(angular);
         });
-    } else if (typeof module === 'object' && module.exports) {
+    }else if (typeof module === 'object' && module.exports){
         // Node. Does not work with strict CommonJS, but
         // only CommonJS-like enviroments that support module.exports,
         // like Node.
         module.exports = factory(require('angular'));
-    } else {
+    }else {
         // Browser globals
         factory(root.angular);
     }
-}(this, function(ng) {
+}(this, function(ng){
 
     var slice = Array.prototype.slice;
 
@@ -30,22 +30,22 @@
     var mod = ng.module(name, []);
 
 
-    var Promiseify = function($q) {
+    var Promiseify = function($q){
 
-        return function(func) {
+        return function(func){
 
-            return function() {
+            return function(){
                 var ctx = this;
                 var parameters = slice.apply(arguments);
 
-                return $q(function(resolve, reject) {
+                return $q(function(resolve, reject){
 
-                    var cb = function(err) {
-                        if (err) {
+                    var cb = function(err){
+                        if (err){
                             return reject(err);
                         }
                         var callbackData = slice.apply(arguments);
-                        if (callbackData.length === 2) {
+                        if (callbackData.length === 2){
                             return resolve.call(this, callbackData[1]);
                         }
                         return resolve.call(this, callbackData.slice(1));
@@ -53,7 +53,7 @@
 
                     try {
                         func.apply(ctx, parameters.concat([cb]));
-                    } catch (e) {
+                    }catch (e){
                         return reject(e);
                     }
 
